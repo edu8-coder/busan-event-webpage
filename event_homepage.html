@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026년 12월 5일, 사직야구장에서 열리는 부산 시민 AI 체험의 날. 생활 속 AI 활용법을 쉽고 안전하게 소개합니다. 실습 시간 1시간, 온라인 사전 신청, 참가비 2,000원. 행사 시작·종료 시각은 미정입니다.">
+  <meta name="theme-color" content="#163d43">
+  <title>부산 시민 AI 체험의 날 | 행사 안내</title>
+  <style>
+    :root { --paper:#f7f5ed; --white:#fffef9; --ink:#163d43; --muted:#53686a; --coral:#fa735c; --yellow:#efca65; --line:#d9dfd8; --green:#dce8de; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:110px; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif; line-height:1.7; word-break:keep-all; overflow-wrap:anywhere; }
+    a { color:inherit; text-underline-offset:4px; }
+    a:focus-visible, summary:focus-visible { outline:3px solid #a83b27; outline-offset:5px; }
+    .wrap { width:min(1160px,calc(100% - 80px)); margin-inline:auto; }
+    .skip { position:fixed; left:20px; top:-100px; z-index:100; background:var(--ink); color:white; padding:12px 20px; }
+    .skip:focus { top:12px; }
+    .header { position:sticky; top:0; z-index:10; background:rgba(247,245,237,.97); border-bottom:1px solid var(--line); }
+    .header-row { min-height:86px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:800; font-size:17px; letter-spacing:-.5px; }
+    .brand-mark { width:36px; height:36px; background:var(--ink); color:var(--paper); display:grid; place-items:center; border-radius:50%; font-size:24px; }
+    nav { display:flex; gap:30px; font-size:14px; font-weight:700; }
+    nav a { padding:10px 0; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    .hero { padding:68px 0 50px; }
+    .hero-grid { display:grid; grid-template-columns:1.06fr 1fr; gap:55px; align-items:center; }
+    .eyebrow { display:flex; align-items:center; gap:8px; margin:0 0 22px; font-size:13px; font-weight:700; letter-spacing:.05em; }
+    .dot { width:8px; height:8px; border-radius:50%; background:#bd4a36; }
+    .event-date { display:inline-flex; margin:0 0 18px; padding:5px 14px; background:#f9d9c8; border-radius:30px; font-size:14px; font-weight:800; }
+    h1 { font-size:clamp(38px,4.5vw,64px); line-height:1.18; letter-spacing:-3px; margin:0 0 26px; font-weight:900; }
+    .accent { display:inline-block; position:relative; isolation:isolate; }
+    .accent::after { content:""; position:absolute; z-index:-1; left:0; right:0; bottom:5px; height:16px; background:var(--yellow); }
+    .hero-copy { font-size:21px; line-height:1.7; letter-spacing:-.5px; margin:0 0 29px; }
+    .hero-copy small { display:block; margin-top:12px; font-size:15px; color:var(--muted); }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:28px; min-height:50px; padding:13px 23px; font-size:14px; font-weight:700; text-decoration:none; border-radius:5px; background:var(--ink); color:white; }
+    .button:hover { background:#28565c; }
+    .button.secondary { background:transparent; color:var(--ink); border:1px solid #73878a; }
+    .button.secondary:hover { background:var(--green); }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .art { margin:0; position:relative; }
+    .art svg { display:block; width:100%; height:auto; border-radius:26px 26px 90px 26px; box-shadow:0 20px 45px -25px #22475b80; }
+    .art figcaption { color:var(--muted); font-size:12px; margin-top:9px; text-align:right; }
+    .facts { display:grid; grid-template-columns:1.15fr 1fr 1fr 1fr; border-top:1px solid var(--ink); border-bottom:1px solid var(--line); margin-top:48px; padding:25px 0; }
+    .fact { padding:0 25px; border-left:1px solid var(--line); }
+    .fact:first-child { padding-left:0; border:0; }
+    .fact dt { color:var(--muted); font-size:12px; margin-bottom:5px; }
+    .fact dd { margin:0; font-size:20px; font-weight:800; }
+    .fact dd small { display:block; font-size:11px; font-weight:400; color:var(--muted); margin-top:3px; }
+    .pending { display:inline-block; background:#e7eae3; color:#495c5e; padding:2px 9px; border-radius:4px; font-size:12px; font-weight:600; vertical-align:middle; }
+    section { padding:68px 0; scroll-margin-top:16px; }
+    .section-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:32px; margin-bottom:30px; }
+    .section-number { font-size:12px; font-weight:700; color:var(--muted); margin:0 0 10px; letter-spacing:1px; }
+    h2 { font-size:34px; line-height:1.35; letter-spacing:-1.5px; margin:0; }
+    .section-note { max-width:340px; color:var(--muted); font-size:14px; margin:26px 0 0; }
+    .about { padding-top:40px; }
+    .about-box { display:grid; grid-template-columns:1.2fr 1fr; gap:64px; }
+    .about p { margin:22px 0 0; font-size:16px; color:var(--muted); max-width:560px; }
+    .about-callout { border-left:3px solid var(--coral); padding-left:26px; align-self:center; }
+    .about-callout strong { display:block; font-size:24px; letter-spacing:-1px; line-height:1.5; }
+    .about-callout p { font-size:14px; margin-top:12px; }
+    .programs { background:var(--green); }
+    .cards { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .card { background:var(--white); padding:32px; border:1px solid #cbd7ce; border-radius:12px; }
+    .card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:31px; }
+    .step { font-size:13px; font-weight:700; border:1px solid #91a59b; padding:4px 12px; border-radius:30px; }
+    .card-icon { width:48px; height:48px; display:grid; place-items:center; border-radius:50%; background:var(--yellow); font-size:24px; font-weight:800; }
+    .card:nth-child(2) .card-icon { background:#f9d3c4; }
+    h3 { font-size:25px; letter-spacing:-1px; margin:0 0 12px; line-height:1.4; }
+    .card p { color:var(--muted); margin:0 0 24px; font-size:14px; }
+    .detail-list { margin:0; font-size:13px; }
+    .detail-list > div { display:flex; gap:20px; justify-content:space-between; padding:10px 0; border-top:1px solid var(--line); }
+    .detail-list dt { color:var(--muted); }
+    .detail-list dd { margin:0; text-align:right; }
+    .signup-grid { display:grid; grid-template-columns:1fr 1fr; gap:52px; align-items:start; }
+    .signup-lead { margin:20px 0; color:var(--muted); font-size:15px; }
+    .signup-link-note { font-size:12px; color:var(--muted); max-width:390px; margin:12px 0 0; }
+    .signup-box { padding:24px 28px; border:1px solid var(--line); background:var(--white); border-radius:12px; }
+    .signup-box .detail-list { font-size:14px; }
+    .signup-box .detail-list > div:first-child { border:0; }
+    .signup-box dd { max-width:210px; }
+    .fee-note { font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin:10px 0 0; }
+    .visit { padding-top:16px; }
+    .visit-panel { display:grid; grid-template-columns:1.05fr 1fr 1fr; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    .visit-block { padding:30px; background:var(--white); border-left:1px solid var(--line); }
+    .visit-block:first-child { background:var(--ink); color:white; border-left:0; }
+    .visit-label { font-size:12px; margin:0 0 20px; }
+    .visit-block h3 { font-size:23px; }
+    .visit-block p:last-child { font-size:13px; margin:13px 0 0; color:var(--muted); }
+    .visit-block:first-child p:last-child { color:#dae5e2; }
+    .notice { padding:0 0 68px; }
+    .notice-box { padding:24px 28px; background:#eeece2; border-radius:8px; }
+    .notice-box h2 { font-size:18px; letter-spacing:-.5px; margin-bottom:8px; }
+    .notice-box p { margin:0; color:var(--muted); font-size:13px; }
+    footer { background:var(--ink); color:var(--paper); padding:35px 0; }
+    .footer-row { display:flex; justify-content:space-between; align-items:flex-start; gap:28px; }
+    .footer-name { margin:0 0 8px; font-size:16px; font-weight:700; }
+    .footer-info { font-size:12px; color:#d4dfdc; margin:0; }
+    .footer-end { text-align:right; font-size:12px; color:#d4dfdc; }
+    .footer-end p { margin:0 0 8px; }
+    .footer-end a { color:var(--paper); }
+    @media (max-width:950px) {
+      .wrap { width:calc(100% - 48px); }
+      .hero-grid { gap:30px; }
+      h1 { font-size:46px; letter-spacing:-2px; }
+      .hero-copy { font-size:18px; }
+      nav { gap:18px; }
+      .fact { padding-inline:16px; }
+      .fact dd { font-size:17px; }
+      .about-box { gap:35px; }
+      .visit-block { padding:24px; }
+    }
+    @media (max-width:680px) {
+      html { scroll-padding-top:125px; }
+      .wrap { width:calc(100% - 40px); }
+      .header-row { flex-direction:column; align-items:flex-start; gap:5px; padding:12px 0 8px; min-height:0; }
+      .brand { font-size:15px; }
+      .brand-mark { width:28px; height:28px; font-size:20px; }
+      nav { width:100%; justify-content:space-between; gap:10px; font-size:12px; }
+      nav a { min-height:44px; display:flex; align-items:center; padding:8px 0; }
+      .hero { padding:38px 0 26px; }
+      .hero-grid { grid-template-columns:1fr; gap:30px; }
+      .eyebrow { margin-bottom:18px; font-size:12px; }
+      h1 { font-size:46px; letter-spacing:-2.5px; margin-bottom:20px; }
+      .hero-copy { font-size:18px; }
+      .hero-copy small { font-size:14px; }
+      .hero-actions { gap:10px; }
+      .button { font-size:13px; padding:12px 18px; gap:16px; }
+      .art { max-width:450px; width:100%; margin-inline:auto; }
+      .facts { grid-template-columns:1fr 1fr; gap:22px 0; margin-top:30px; padding:22px 0; }
+      .fact { padding:0 15px; }
+      .fact:nth-child(3) { border:0; padding-left:0; }
+      .fact dd { font-size:17px; }
+      section { padding:44px 0; }
+      .section-heading { flex-direction:column; gap:12px; margin-bottom:24px; }
+      h2 { font-size:28px; letter-spacing:-1px; }
+      .section-note { margin:0; }
+      .about { padding-top:24px; }
+      .about-box, .signup-grid, .cards, .visit-panel { grid-template-columns:1fr; }
+      .about-box, .signup-grid { gap:28px; }
+      .about-callout strong { font-size:21px; }
+      .card { padding:26px; }
+      .card-top { margin-bottom:24px; }
+      .visit { padding-top:0; }
+      .visit-block { border-left:0; border-top:1px solid var(--line); }
+      .visit-block:first-child { border-top:0; }
+      .notice { padding-bottom:44px; }
+      .notice-box { padding:22px; }
+      .footer-row { flex-direction:column; gap:18px; }
+      .footer-end { text-align:left; }
+    }
+    @media (max-width:360px) { h1 { font-size:39px; } .wrap { width:calc(100% - 32px); } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { .header { position:static; } .hero-actions, .skip, .footer-end a { display:none; } body { background:white; } section { padding:25px 0; } .card, .visit-panel { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="부산 시민 AI 체험의 날 첫 화면"><span class="brand-mark" aria-hidden="true">✳</span>부산 시민 AI 체험의 날</a>
+      <nav aria-label="행사 메뉴"><a href="#about">행사 소개</a><a href="#program">프로그램</a><a href="#signup">참여 안내</a><a href="#visit">방문 안내</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="hero wrap" id="top">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>부산의 모든 시민을 위한 AI 체험 행사</p>
+          <p class="event-date"><time datetime="2026-12-05">2026년 12월 5일</time></p>
+          <h1>부산 시민<br><span class="accent">AI 체험의 날</span></h1>
+          <p class="hero-copy">생활 속 AI 활용법을<br>쉽고 안전하게 소개합니다.<small>AI 체험과 실습, 그리고 경연대회까지.</small></p>
+          <div class="hero-actions"><a class="button" href="#signup">참여 방법 알아보기 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#program">프로그램 보기 <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <figure class="art">
+          <svg viewBox="0 0 520 465" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="art-title">생활 속 AI와 스마트폰을 표현한 일러스트</title>
+            <desc id="art-desc">푸른색과 보라색 빛 속에 입체적인 스마트폰이 떠 있고, 분홍빛 대화 모양과 반짝이는 별, 색색의 구체와 궤도가 둘러싼 화려한 AI 주제 일러스트입니다.</desc>
+            <defs>
+              <linearGradient id="art-bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#073e50"/><stop offset=".5" stop-color="#19215b"/><stop offset="1" stop-color="#58419b"/></linearGradient>
+              <radialGradient id="art-halo"><stop stop-color="#16f5d1" stop-opacity=".55"/><stop offset="1" stop-color="#16f5d1" stop-opacity="0"/></radialGradient>
+              <radialGradient id="art-pink"><stop stop-color="#ffc7dd"/><stop offset=".35" stop-color="#fc86bb"/><stop offset="1" stop-color="#b62c90"/></radialGradient>
+              <radialGradient id="art-lime" cx=".3" cy=".25"><stop stop-color="#ffffd8"/><stop offset=".45" stop-color="#f2de63"/><stop offset="1" stop-color="#82b62f"/></radialGradient>
+              <linearGradient id="art-rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7ffff"/><stop offset=".35" stop-color="#76ecd9"/><stop offset=".7" stop-color="#b1a2ff"/><stop offset="1" stop-color="#e4cdfc"/></linearGradient>
+              <linearGradient id="art-screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3faff"/><stop offset=".6" stop-color="#ecdcff"/><stop offset="1" stop-color="#bdf4ed"/></linearGradient>
+              <linearGradient id="art-badge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb899"/><stop offset="1" stop-color="#ff74bc"/></linearGradient>
+              <linearGradient id="art-orbit"><stop stop-color="#91fff0"/><stop offset=".55" stop-color="#c7a2ff"/><stop offset="1" stop-color="#ffbf82"/></linearGradient>
+              <pattern id="dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c5d6ff" opacity=".2"/></pattern>
+              <filter id="art-shadow" x="-.5" y="-.5" width="2" height="2"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#020c36" flood-opacity=".5"/></filter>
+              <filter id="art-glow" x="-1" y="-1" width="3" height="3"><feGaussianBlur stdDeviation="3"/></filter>
+              <path id="art-star" d="M0-15L4-4L15 0L4 4L0 15L-4 4L-15 0L-4-4Z"/>
+            </defs>
+            <rect width="520" height="465" fill="url(#art-bg)"/>
+            <rect width="520" height="465" fill="url(#dots)"/>
+            <circle cx="257" cy="233" r="237" fill="url(#art-halo)"/>
+            <circle cx="469" cy="21" r="109" fill="#ad72ff" opacity=".18"/>
+            <g fill="none" stroke="url(#art-orbit)">
+              <ellipse cx="261" cy="240" rx="230" ry="133" transform="rotate(-30 261 240)" opacity=".55"/>
+              <ellipse cx="261" cy="240" rx="211" ry="114" transform="rotate(30 261 240)" opacity=".4" stroke-dasharray="4 10"/>
+              <circle cx="262" cy="235" r="172" opacity=".18"/>
+            </g>
+            <path d="M-22 380Q120 313 261 421T570 346" fill="none" stroke="#3cf2ce" stroke-width="33" opacity=".18"/>
+            <path d="M-22 403Q120 334 261 442T570 369" fill="none" stroke="#98fff0" stroke-width="2" opacity=".65"/>
+            <g filter="url(#art-shadow)">
+              <circle cx="426" cy="84" r="48" fill="url(#art-pink)"/>
+              <ellipse cx="426" cy="84" rx="65" ry="12" fill="none" stroke="#e1c8ff" stroke-width="5" transform="rotate(-25 426 84)"/>
+              <circle cx="82" cy="67" r="27" fill="url(#art-lime)"/>
+              <circle cx="107" cy="370" r="28" fill="url(#art-pink)"/>
+              <circle cx="449" cy="248" r="16" fill="url(#art-lime)"/>
+            </g>
+            <g transform="translate(181 69) rotate(10 91 155)" filter="url(#art-shadow)">
+              <rect x="5" y="6" width="187" height="319" rx="31" fill="#2a1f65"/>
+              <rect width="187" height="319" rx="31" fill="#112b49" stroke="url(#art-rim)" stroke-width="5"/>
+              <rect x="11" y="12" width="165" height="295" rx="22" fill="url(#art-screen)"/>
+              <rect x="62" y="20" width="63" height="11" rx="6" fill="#173b50"/>
+              <circle cx="93" cy="119" r="59" fill="#7777f5" opacity=".18"/>
+              <circle cx="93" cy="119" r="50" fill="#182e59"/>
+              <circle cx="93" cy="119" r="50" fill="none" stroke="#4aedd9" stroke-width="3"/>
+              <path d="M52 99L65 82M121 152L135 135" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              <text x="93" y="139" text-anchor="middle" font-size="59" font-family="sans-serif" font-weight="800" fill="#ffffff">AI</text>
+              <g fill="#a6a0e8"><rect x="31" y="190" width="124" height="9" rx="4"/><rect x="31" y="209" width="86" height="9" rx="4" opacity=".5"/></g>
+              <rect x="31" y="244" width="126" height="34" rx="11" fill="#5a4bd2"/>
+              <path d="M85 261H105M100 256L105 261L100 266" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M150 49L156 63L170 69L156 75L150 89L144 75L130 69L144 63Z" fill="#ffb258"/>
+            </g>
+            <g transform="translate(24 151) rotate(-9)" filter="url(#art-shadow)">
+              <rect x="4" y="6" width="182" height="67" rx="18" fill="#9c396e"/>
+              <rect width="182" height="67" rx="18" fill="url(#art-badge)" stroke="#ffd9d9" stroke-width="1"/>
+              <path d="M135 64V83L157 65" fill="#ff82b3"/>
+              <text x="91" y="42" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="800" fill="#273450">생활 속 AI</text>
+            </g>
+            <g transform="translate(311 315) rotate(-7)" filter="url(#art-shadow)">
+              <rect x="3" y="5" width="173" height="73" rx="18" fill="#2a7c89"/>
+              <rect width="173" height="73" rx="18" fill="#baffdf" stroke="#f2ffdd" stroke-width="1"/>
+              <text x="86" y="31" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="800" fill="#173b50">체험·실습</text>
+              <text x="86" y="55" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#173b50">↓ 경연대회</text>
+            </g>
+            <g fill="#fff0b3"><use href="#art-star" transform="translate(120 276) scale(1.8) rotate(12)"/><use href="#art-star" transform="translate(391 195) scale(.85)"/><use href="#art-star" transform="translate(304 38) scale(.65)"/></g>
+            <g fill="#b2fff0"><use href="#art-star" transform="translate(67 249) scale(.65)"/><use href="#art-star" transform="translate(465 405) scale(.6)"/></g>
+            <g stroke-linecap="round" stroke-width="5"><path d="M156 44L162 58M46 327L58 320" stroke="#ff91ca"/><path d="M465 165L475 157M357 411L365 424" stroke="#9bfadd"/><path d="M159 406L171 412M355 46L363 34" stroke="#ffc367"/></g>
+            <g fill="#c7fff5"><circle cx="402" cy="272" r="4"/><circle cx="42" cy="111" r="3"/><circle cx="190" cy="33" r="3"/><circle cx="391" cy="412" r="3"/></g>
+            <g fill="#83ffe7" filter="url(#art-glow)"><circle cx="152" cy="245" r="7"/><circle cx="369" cy="142" r="7"/></g>
+            <circle cx="152" cy="245" r="3" fill="#e8fff8"/><circle cx="369" cy="142" r="3" fill="#e8fff8"/>
+            <text x="30" y="433" fill="#e7f5ff" font-family="sans-serif" font-size="12" letter-spacing="3">BUSAN · EVERYDAY AI</text>
+          </svg>
+          <figcaption>행사 주제를 표현한 일러스트</figcaption>
+        </figure>
+      </div>
+      <dl class="facts">
+        <div class="fact"><dt>행사 장소</dt><dd>사직야구장</dd></div>
+        <div class="fact"><dt>행사 일시</dt><dd><time datetime="2026-12-05">2026. 12. 5.</time><small>시작·종료 시각 미정</small></dd></div>
+        <div class="fact"><dt>참여 대상</dt><dd>부산의 모든 시민</dd></div>
+        <div class="fact"><dt>참가비</dt><dd>2,000원<small>적용 단위·포함 범위 미정</small></dd></div>
+      </dl>
+    </div>
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div class="about-box">
+        <div><p class="section-number">01 / 행사 소개</p><h2 id="about-title">생활 속 AI,<br>쉽고 안전하게.</h2><p>2026년 12월 5일, 부산의 모든 시민을 대상으로 생활 속 AI 활용법을 쉽고 안전하게 소개하는 행사입니다. 사직야구장에서 AI 체험과 실습을 진행한 뒤 경연대회를 개최합니다. 실습 시간은 1시간입니다.</p></div>
+        <div class="about-callout"><strong>스마트폰을 준비하고,<br>AI 체험에 참여해 보세요.</strong><p>참여 방식은 온라인 사전 신청입니다.<br>행사 시작·종료 시각은 <span class="pending">미정</span>입니다.</p></div>
+      </div>
+    </section>
+    <section class="programs" id="program" aria-labelledby="program-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="section-number">02 / 프로그램</p><h2 id="program-title">체험하고 실습한 뒤,<br>경연대회로 이어집니다.</h2></div><p class="section-note">실습 시간은 1시간입니다.<br>세부 내용과 프로그램 시작 시각은 미정입니다.</p></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><span class="step">첫 번째</span><span class="card-icon" aria-hidden="true">✳</span></div><h3>AI 체험 및 실습</h3><p>생활 속 AI 활용법을 소개하는 체험·실습 프로그램입니다.</p><dl class="detail-list"><div><dt>실습 시간</dt><dd><strong>1시간</strong></dd></div><div><dt>세부 체험·실습 내용</dt><dd><span class="pending">미정</span></dd></div><div><dt>체험 소요 시간·시작 시각</dt><dd><span class="pending">미정</span></dd></div></dl></article>
+          <article class="card"><div class="card-top"><span class="step">두 번째</span><span class="card-icon" aria-hidden="true">⚑</span></div><h3>경연대회</h3><p>AI 체험 및 실습 후 경연대회를 진행합니다.</p><dl class="detail-list"><div><dt>참가 방식·심사 기준</dt><dd><span class="pending">미정</span></dd></div><div><dt>진행 시간·시상 내용</dt><dd><span class="pending">미정</span></dd></div></dl></article>
+        </div>
+      </div>
+    </section>
+    <section class="wrap" id="signup" aria-labelledby="signup-title">
+      <div class="signup-grid">
+        <div><p class="section-number">03 / 참여 안내</p><h2 id="signup-title">온라인 사전 신청으로<br>참여하세요.</h2><p class="signup-lead">부산의 모든 시민이 참여 대상입니다.<br>신청 기간과 모집 정원은 미정입니다.</p><a class="button" href="https://www.busan.kr" target="_blank" rel="noopener noreferrer">제공된 링크 열기 <span aria-hidden="true">↗</span><span class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap"> (새 창)</span></a><p class="signup-link-note">제공된 주소: https://www.busan.kr<br>실제 신청 페이지 경로는 미정입니다. 현재 접수 여부는 확인되지 않았습니다.</p></div>
+        <div class="signup-box"><dl class="detail-list"><div><dt>참여 방법</dt><dd>온라인 사전 신청</dd></div><div><dt>참가비</dt><dd><strong>2,000원</strong></dd></div><div><dt>신청 기간</dt><dd><span class="pending">미정</span></dd></div><div><dt>모집 정원</dt><dd><span class="pending">미정</span></dd></div><div><dt>실제 신청 페이지 경로</dt><dd><span class="pending">미정</span></dd></div></dl><p class="fee-note">참가비의 적용 단위와 포함 프로그램 범위는 미정입니다.</p></div>
+      </div>
+    </section>
+    <section class="visit wrap" id="visit" aria-labelledby="visit-title">
+      <div class="section-heading"><div><p class="section-number">04 / 방문 안내</p><h2 id="visit-title">방문 전, 꼭 확인하세요.</h2></div></div>
+      <div class="visit-panel">
+        <div class="visit-block"><p class="visit-label">행사 장소</p><h3>사직야구장</h3><p>세부 행사 공간: 미정<br>이용 출입구: 미정</p></div>
+        <div class="visit-block"><p class="visit-label">준비물</p><h3>스마트폰 필수</h3><p>행사에 참여할 때 스마트폰을 반드시 준비해 주세요.</p></div>
+        <div class="visit-block"><p class="visit-label">주차 안내</p><h3>주차장 없음</h3><p>주차장이 없으니 방문 시 참고해 주세요.</p></div>
+      </div>
+    </section>
+    <section class="notice wrap" aria-labelledby="notice-title"><div class="notice-box"><h2 id="notice-title">미정 사항 안내</h2><p>행사 시작·종료 시각, 세부 행사 공간·출입구, 프로그램 상세·시작 시각, 체험 소요 시간, 경연대회 진행 시간·참가 방식·심사 기준·시상 내용, 신청 기간·모집 정원·실제 신청 경로, 참가비 적용 단위·포함 범위, 문의처는 미정입니다.</p></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><div><p class="footer-name">부산 시민 AI 체험의 날</p><p class="footer-info">행사 기관: 부산시 · 주최·주관 구분: 미정<br>행사 문의처: 미정</p></div><div class="footer-end"><p>생활 속 AI 활용법을 쉽고 안전하게 소개</p><a href="#top">처음으로 ↑</a></div></div></footer>
+</body>
+</html>

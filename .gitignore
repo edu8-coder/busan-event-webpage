@@ -1,0 +1,14 @@
+/data/
+/outputs/
+/AGENTS.md
+/hello_busan.md
+/_site/
+/.vercel/
+/dist/
+/node_modules/
+.env
+.env.*
+!.env.example
+
+.vercel
+.env*
