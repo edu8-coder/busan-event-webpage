@@ -2,6 +2,8 @@
 
 행사 홍보용 단일 HTML 웹페이지입니다.
 
+GitHub Pages 공개 주소: [부산 시민 AI 체험의 날](https://edu8-coder.github.io/busan-event-webpage/)
+
 - 행사 날짜: 2026년 12월 5일
 - 장소: 사직야구장
 - 실습 시간: 1시간
